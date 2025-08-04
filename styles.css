@@ -1,0 +1,47 @@
+/* styles.css */
+body {
+    font-family: 'Inter', sans-serif;
+}
+.info-item {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.8rem;
+    color: #4A5568;
+}
+.age-group-title {
+    font-weight: 700;
+    color: #004AAD;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #E2E8F0;
+}
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.accordion-button svg {
+    transition: transform 0.3s ease;
+}
+.accordion-button.open svg {
+    transform: rotate(180deg);
+}
+
+
+    
+#copyright a {
+    font-family: Inter;
+    font-style: italic;
+    
+}
+
